@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Формы</title>
+
+<style>
+form {
+    width: 30%;
+    }
+
+form>*,
+form>fieldset>* {
+    margin-bottom:10px;
+}
+</style>
+
+</head>
+<body>
+    <h1>Регистрация в библиотеке</h1>
+    <form action="request.php" method="POST" enctype="application/x-www-form-urlencoded">
+       <fieldset>
+        <fieldset> 
+            <legend>Контактные данные</legend>
+            <div>ФИО <input type="text" name="required" placeholder="ФИО"> </div>
+            <div>E-mail <input type="email" name="required" placeholder="Email"> </div>
+            <div>Пароль <input type="password" name="required"> </div>
+            <div>Адрес сайта <input type="text" placeholder="https://"> </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Дополнительные данные</legend>
+                <div>Пол 
+                    <select name="пол" size="1">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select> 
+                </div>
+
+                <div>О себе 
+                    <textarea cols="30" rows="2" wrap="soft" placeholder="Напишите о себе"></textarea>
+                </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Предпочтения в литературе</legend>
+                <input type="checkbox"> Классическая литература <br>
+                <input type="checkbox"> Научная фантастика <br>
+                <input type="checkbox"> Детективы
+        </fieldset>
+
+        <fieldset>
+            <legend>Согласны ли Вы с правилами сайта?</legend>
+                <div>
+                    <input type="radio" name="radio" value="Yes" checked> Да <br>
+                    <input type="radio" name="radio" value="Yes"> Нет
+                </div>
+                
+        </fieldset>
+
+        <fieldset>
+            <legend>Отправка формы</legend>
+                <input type="button" name="registration" value="Зарегистрироваться">
+                <input type="button" name="reset" value="Очистить форму">  
+        </fieldset>
+
+
+
+
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
