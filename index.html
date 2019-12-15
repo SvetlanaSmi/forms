@@ -60,11 +60,15 @@ form>fieldset>* {
 
         <fieldset>
             <legend>Предпочтения в литературе</legend>
-                <div>
-                <input type="checkbox" name="checkbox[]" value="classic"> Классическая литература <br>
-                <input type="checkbox" name="checkbox[]" value="science"> Научная фантастика <br>
-                <input type="checkbox" name="checkbox[]" value="detective"> Детективы
-                </div>
+                
+                    <input id="classic" type="checkbox" name="checkbox[]"> 
+                    <label for="classic">Классическая литература</label><br>
+
+                    <input id="science" type="checkbox" name="checkbox[]"> 
+                    <label for="science">Научная фантастика</label><br>
+
+                    <input id="detective" type="checkbox" name="checkbox[]"> 
+                    <label for="detective">Детективы</label>
             </fieldset>
 
         <fieldset>
@@ -75,6 +79,20 @@ form>fieldset>* {
                 </div>
                 
         </fieldset>
+
+        <fieldset>
+            <legend>Согласны ли Вы с правилами сайта?</legend>
+                <div>
+                    <input id="Yes" type="radio" value="Yes" checked> 
+                    <label for="Yes">Да</label> <br>
+            
+
+                    <input id="No" type="radio" value="No"> 
+                    <label for="No">Нет</label>
+                </div>
+                
+        </fieldset>
+
 
         <fieldset>
             <legend>Отправка формы</legend>
